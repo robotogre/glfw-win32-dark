@@ -17,6 +17,7 @@ Release
 MinSizeRel
 RelWithDebInfo
 *.opensdf
+.vscode
 
 # Xcode clutter
 GLFW.build
