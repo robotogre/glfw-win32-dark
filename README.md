@@ -1,11 +1,10 @@
 ## FIJI NOTE
 
-# Set the install prefix
+# How to build FIJI
 
-if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/tomsh/dev/msys64/home/tomsh/git/github.com/robotogre/glfw-win32-dark/GLFW")
-endif()
-string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+cmake -S . -B build  -D BUILD_SHARED_LIBS=ON
+cd build
+cmake --build .
 
 # GLFW
 
